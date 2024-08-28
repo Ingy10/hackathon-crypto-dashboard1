@@ -12,7 +12,6 @@ function Header() {
                 Home
               </Link>
             </li>
-            {/* <li className="header__nav-item--2">Wallet</li> */}
           </ul>
         </nav>
         <h1 className="header__title">Crypto Tracker</h1>
