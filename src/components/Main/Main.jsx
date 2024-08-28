@@ -32,8 +32,13 @@ function Main() {
                   key={crypto.id}
                   to={`cryptos/${crypto.id}`}
                 >
-                  <strong>{crypto.name}{'\u00A0'}{'\u00A0'}{'\u00A0'}</strong> ${parseFloat(crypto.priceUsd).toFixed(2)}
-                  {/* {parseFloat(crypto.changePercent24Hr).toFixed(2)}% */}
+                  <strong>
+                    {crypto.name}
+                    {"\u00A0"}
+                    {"\u00A0"}
+                    {"\u00A0"}
+                  </strong>{" "}
+                  ${parseFloat(crypto.priceUsd).toFixed(2)}
                 </Link>
                 <p
                   className="main__item--text"

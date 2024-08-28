@@ -35,7 +35,6 @@ function MainDetails() {
             </h1>
 
             <div className="main__crypto-info">
-              {/* <h2>General Information</h2> */}
               <p>
                 <strong>Rank:</strong> #{cryptos.rank}
               </p>
@@ -46,7 +45,6 @@ function MainDetails() {
               <span className="main__span">
                 <p>
                   <strong>24h Change:</strong> {"\u00A0"}
-                  {/* {parseFloat(cryptos.changePercent24Hr).toFixed(2)}% */}
                 </p>
                 <p
                   style={{
