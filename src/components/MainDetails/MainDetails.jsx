@@ -7,6 +7,7 @@ import { useParams } from "react-router-dom";
 function Main() {
   const [cryptos, setCryptos] = useState([]);
   const { id } = useParams();
+  console.log(id);
 
   useEffect(() => {
     const getData = async () => {
@@ -15,13 +16,14 @@ function Main() {
           `https://api.coincap.io/v2/assets/${id}`
         );
         setCryptos(response.data.data);
+        console.log(response.data.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
 
     getData();
-  }, [id]);
+  }, []);
 
   return (
     <>
@@ -33,7 +35,7 @@ function Main() {
               {/* <h3>Symbol</h3>
               <p>{crypto.symbol}</p> */}
               <h3>Market Cap</h3>
-              <h3>{crypto.marketCapUsd}</h3>
+              <h3>{cryptos.marketCapUsd}</h3>
             </li>
           </ul>
         </section>
