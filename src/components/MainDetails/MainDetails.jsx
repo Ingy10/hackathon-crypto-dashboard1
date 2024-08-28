@@ -35,7 +35,7 @@ function MainDetails() {
             </h1>
 
             <div className="main__crypto-info">
-              <h2>General Information</h2>
+              {/* <h2>General Information</h2> */}
               <p>
                 <strong>Rank:</strong> #{cryptos.rank}
               </p>
@@ -43,10 +43,19 @@ function MainDetails() {
                 <strong>Price (USD):</strong> $
                 {parseFloat(cryptos.priceUsd).toFixed(2)}
               </p>
-              <p>
-                <strong>24h Change:</strong>{" "}
-                {parseFloat(cryptos.changePercent24Hr).toFixed(2)}%
-              </p>
+              <span className="main__span">
+                <p>
+                  <strong>24h Change:</strong> {"\u00A0"}
+                  {/* {parseFloat(cryptos.changePercent24Hr).toFixed(2)}% */}
+                </p>
+                <p
+                  style={{
+                    color: cryptos.changePercent24Hr < 0 ? "red" : "green",
+                  }}
+                >
+                  {parseFloat(cryptos.changePercent24Hr).toFixed(2)}%
+                </p>
+              </span>
             </div>
 
             <div className="market-data">

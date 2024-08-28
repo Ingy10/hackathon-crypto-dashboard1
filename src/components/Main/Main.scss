@@ -18,7 +18,7 @@
     list-style-type: none;
     text-decoration: none;
     padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.5rem;
     // border: 1px solid gray;
     background-color: rgba(0, 0, 0, 0.515);
     &:hover {
@@ -27,9 +27,11 @@
     &--text {
       text-decoration: none;
       color: rgb(255, 255, 255);
+      margin: 0;
       &:hover {
         // color: darkblue;
         text-decoration: none;
+        color: rgba(192, 192, 192, 0.89);
       }
     }
   }

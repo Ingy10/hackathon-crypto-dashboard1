@@ -23,7 +23,6 @@ function Main() {
     <>
       <main className="main">
         <section className="main__section">
-          {/* <h1 className="main__title">Cryptocurreny List</h1> */}
           <ul>
             {cryptos.map((crypto) => (
               <li className="main__item" key={crypto.id}>
@@ -33,9 +32,17 @@ function Main() {
                   key={crypto.id}
                   to={`cryptos/${crypto.id}`}
                 >
-                  {crypto.name} - ${parseFloat(crypto.priceUsd).toFixed(2)}
-                  {/* {crypto.symbol} - ${crypto.priceUsd} */}
+                  <strong>{crypto.name}{'\u00A0'}{'\u00A0'}{'\u00A0'}</strong> ${parseFloat(crypto.priceUsd).toFixed(2)}
+                  {/* {parseFloat(crypto.changePercent24Hr).toFixed(2)}% */}
                 </Link>
+                <p
+                  className="main__item--text"
+                  style={{
+                    color: crypto.changePercent24Hr < 0 ? "red" : "green",
+                  }}
+                >
+                  {parseFloat(crypto.changePercent24Hr).toFixed(2)}%
+                </p>
               </li>
             ))}
           </ul>
