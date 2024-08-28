@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  &__crypto-details {
+    margin: 1rem;
+    color: white;
+  }
+  &__crypto-title {
+    font-size: 2rem;
+    padding-top: 2rem;
+  }
+  &__crypto-details {
+    background-color: rgba(0, 0, 0, 0.711);
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  &__additional-info {
+    text-decoration: none;
+    color: rgb(137, 137, 137);
+    &:hover {
+      color: yellow;
+    }
+  }
+}

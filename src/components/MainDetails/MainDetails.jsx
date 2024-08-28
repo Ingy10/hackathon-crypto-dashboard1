@@ -4,7 +4,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
-function Main() {
+function MainDetails() {
   const [cryptos, setCryptos] = useState([]);
   const { id } = useParams();
   console.log(id);
@@ -29,13 +29,12 @@ function Main() {
     <>
       <main className="main">
         <section className="main__section">
-          <h1 className="main__title">Cryptocurreny List</h1>
-          <div className="crypto-details">
-            <h1>
+          <div className="main__crypto-details">
+            <h1 className="main__crypto-title">
               {cryptos.name} ({cryptos.symbol}) Details
             </h1>
 
-            <div className="crypto-info">
+            <div className="main__crypto-info">
               <h2>General Information</h2>
               <p>
                 <strong>Rank:</strong> #{cryptos.rank}
@@ -86,6 +85,7 @@ function Main() {
               <p>
                 <strong>Explorer:</strong>{" "}
                 <a
+                  className="main__additional-info"
                   href={cryptos.explorer}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -100,4 +100,4 @@ function Main() {
     </>
   );
 }
-export default Main;
+export default MainDetails;

@@ -6,9 +6,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url(https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg);
+    object-fit: cover;
+    background-position: center;
+    width: 100%;
+    background-size: 100%;
+    margin-top: 0;
   }
   &__item {
     list-style-type: none;
     text-decoration: none;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    // border: 1px solid gray;
+    background-color: rgba(0, 0, 0, 0.515);
+    &:hover {
+      background-color: rgba(138, 138, 138, 0.546);
+    }
+    &--text {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      &:hover {
+        // color: darkblue;
+        text-decoration: none;
+      }
+    }
   }
 }

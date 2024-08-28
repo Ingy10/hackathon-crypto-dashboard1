@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./App.css";
+import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage/HomePage";
-import CryptoDetailsPage from "./Pages/CryptoDetailsPage/CryptoDetailsPage"
+import CryptoDetailsPage from "./Pages/CryptoDetailsPage/CryptoDetailsPage";
 
 function App() {
   return (

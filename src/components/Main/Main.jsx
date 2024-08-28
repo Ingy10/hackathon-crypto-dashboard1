@@ -28,7 +28,11 @@ function Main() {
             {cryptos.map((crypto) => (
               <li className="main__item" key={crypto.id}>
                 {" "}
-                <Link key={crypto.id} to={`cryptos/${crypto.id}`}>
+                <Link
+                  className="main__item--text"
+                  key={crypto.id}
+                  to={`cryptos/${crypto.id}`}
+                >
                   {crypto.name} - ${parseFloat(crypto.priceUsd).toFixed(2)}
                   {/* {crypto.symbol} - ${crypto.priceUsd} */}
                 </Link>
