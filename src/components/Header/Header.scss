@@ -1,0 +1,25 @@
+.header {
+  background-color: antiquewhite;
+
+  &__nav-bar {
+    background-image: url(https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg);
+  }
+  &__nav-items {
+    color: white;
+    list-style-type: none;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+  &__nav-item--1,
+  &__nav-item--2 {
+    flex-grow: 1;
+    border-bottom: 2px solid rgba(255, 255, 0, 0);
+    text-align: center;
+    &:hover {
+      border-bottom: 2px solid rgb(255, 255, 0);
+      cursor: pointer;
+    }
+  }
+}
