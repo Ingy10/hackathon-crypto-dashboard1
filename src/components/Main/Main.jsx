@@ -26,10 +26,13 @@ function Main() {
           <h1 className="main__title">Cryptocurreny List</h1>
           <ul>
             {cryptos.map((crypto) => (
-              <Link key={crypto.id} to={`${crypto.id}`}>
-                {crypto.name} - ${parseFloat(crypto.priceUsd).toFixed(2)}
-                {/* {crypto.symbol} - ${crypto.priceUsd} */}
-              </Link>
+              <li className="main__item" key={crypto.id}>
+                {" "}
+                <Link key={crypto.id} to={`${crypto.id}`}>
+                  {crypto.name} - ${parseFloat(crypto.priceUsd).toFixed(2)}
+                  {/* {crypto.symbol} - ${crypto.priceUsd} */}
+                </Link>
+              </li>
             ))}
           </ul>
         </section>
