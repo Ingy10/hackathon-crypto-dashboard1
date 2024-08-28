@@ -23,7 +23,7 @@ function Main() {
     <>
       <main className="main">
         <section className="main__section">
-          <h1 className="main__title">Cryptocurreny List</h1>
+          {/* <h1 className="main__title">Cryptocurreny List</h1> */}
           <ul>
             {cryptos.map((crypto) => (
               <li className="main__item" key={crypto.id}>
