@@ -8,12 +8,18 @@
     align-items: center;
     padding-top: 2rem;
   }
+  &__list {
+    padding-top: 0.5rem;
+    padding-left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
   &__item {
     list-style-type: none;
     text-decoration: none;
     padding-top: 0.25rem;
     padding-bottom: 0.5rem;
-    background-color: rgba(0, 0, 0, 0.515);
+    // background-color: rgba(0, 0, 0, 0.7);
+    padding-left: 1rem;
     &:hover {
       background-color: rgba(138, 138, 138, 0.546);
     }
